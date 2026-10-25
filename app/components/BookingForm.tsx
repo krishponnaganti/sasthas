@@ -9,6 +9,7 @@ type FormData = {
   issue: string;
 };
 
+
 export default function BookingForm() {
   const [form, setForm] = useState<FormData>({
     name: "",
@@ -40,8 +41,8 @@ export default function BookingForm() {
   };
 
   return (
-    <section className="p-6 bg-white">
-      <h2 className="text-xl font-bold mb-4">Book a Service</h2>
+    <section className="p-6 bg-red-500">
+      <h2 className="text-xl font-bold mb-4 text-white">Book a Service</h2>
 
       <input
         name="name"
